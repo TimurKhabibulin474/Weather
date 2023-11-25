@@ -57,7 +57,7 @@ import conditions from './conditions.js';
   }
 
   async function getWeather(latitude, longitude) {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`;
     const response = await fetch(url);
     const data = await response.json();
     return data;
