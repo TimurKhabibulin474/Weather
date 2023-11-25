@@ -79,7 +79,7 @@ import conditions from './conditions.js';
                       </div>
                       <p class="card__desc">${condition}</p>
                       <img class="card__img" src="${imgPath}" alt="Weather">
-                      <button class="card__btn" id="${key}"><img src="../IMG/cross.svg" alt="Del"></button>
+                      <button class="card__btn" id="${key}"><img src="./IMG/cross.svg" alt="Del"></button>
                     </div>
                   </div>`;
     cardsContainer.insertAdjacentHTML('afterbegin', html);
@@ -91,7 +91,7 @@ import conditions from './conditions.js';
     const html = `<div class="holder__error" id="holder__${key}">
                     <div class="container card">
                       <p>${errorMessage}</p>
-                      <button class="card__btn" id="${key}"><img src="../IMG/cross.svg" alt="Del"></button>
+                      <button class="card__btn" id="${key}"><img src="./IMG/cross.svg" alt="Del"></button>
                     </div>
                   </div>`;
     cardsContainer.insertAdjacentHTML('afterbegin', html)
