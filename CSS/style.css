@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Inter;
+  src: local(Inter),
+    url(../FONTS/Inter-Regular.woff2) format("woff2"),
+    url(../FONTS/Inter-Regular.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --fsize: 40px;
+  --card-img-size: 290px;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: var(--fsize);
+  line-height: normal;
+}
+
+.container {
+  max-width: 768px;
+  padding: 75px;
+  margin: 0 auto;
+}
+
+.header,
+.card {
+  margin-bottom: 30px;
+}
+
+.header__form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form__input {
+  width: 60%;
+  max-width: 400px;
+  padding: 3px 5px;
+  border: 2px solid #000;
+  font-size: calc(var(--fsize) - 10px);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form__input:focus {
+  border-color: #355FCA;
+}
+
+.form__input:hover {
+  border-color: #355FCA;
+}
+
+.form__btn {
+  width: 100%;
+  padding: 22px;
+  border-radius: 8px;
+  color: #fff;
+  outline: 2px solid transparent;
+  background-color: #355FCA;
+  transition: ouline-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.form__btn:focus {
+  outline-color: #000;
+}
+
+.form__btn:hover {
+  background-color: #6e97ff;
+}
+
+.form__btn:active {
+  background-color: #0031ac;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: calc(var(--card-img-size) + 10px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgba(53, 95, 202, 0.5);
+}
+
+.card__country,
+.card__coord {
+  font-size: calc(var(--fsize) - 10px);
+  color: #666;
+}
+
+.card__coord {
+  display: flex;
+  gap: 20px;
+}
+
+.card__value {
+  font-size: calc(var(--fsize) * 2);
+}
+
+.card__img {
+  position: absolute;
+  right: 10px;
+  top: calc((100% - var(--card-img-size)) / 2);
+  width: var(--card-img-size);
+}
+
+.card__btn {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 28px;
+  height: 28px;
+  background-image: url("../IMG/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline-offset: 2px;
+  outline: 1px solid transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card__btn:focus {
+  outline-color: #000;
+}
+
+.card__btn:hover {
+  transform: scale(1.4);
+}
+
+.card__btn:active {
+  transform: none;
+}

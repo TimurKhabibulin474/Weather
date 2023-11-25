@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/media.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="IMG/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <form id="form" class="header__form form">
+        <div class="form__item">
+          <label class="form__label" for="latitude">Широта</label>
+          <input id="latitude" type="number" class="form__input" min="-90" max="90" step="0.0001" required>
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="longitude">Долгота</label>
+          <input id="longitude" type="number" class="form__input" min="-180" max="180" step="0.0001" required>
+        </div>
+        <button class="form__btn">Показать погоду</button>
+      </form>
+    </div>
+  </header>
+  <div id="cards" class="cards"></div>
+  <script src="./conditions.js" type="module"></script>
+  <script defer src="./main.js" type="module"></script>
+</body>
+</html>

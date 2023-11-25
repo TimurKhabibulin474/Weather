@@ -1,0 +1,67 @@
+@media (max-width: 1440px) {
+  :root {
+    --fsize: 30px;
+    --card-img-size: 200px;
+  }
+
+  .container {
+    max-width: 600px;
+    padding: 50px;
+  }
+
+  .header__form {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fsize: 25px;
+    --card-img-size: 140px;
+  }
+
+  .container {
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  .header__form {
+    gap: 20px;
+  }
+
+  .form__btn {
+    padding: 14px;
+  }
+
+  .form__input,
+  .card__country,
+  .card__coord {
+    font-size: calc(var(--fsize) - 5px);
+  }
+
+  .header,
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    gap: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(53, 95, 202, 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fsize: 18px;
+    --card-img-size: 100px;
+  }
+
+  .container {
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .header__form {
+    gap: 20px;
+  }
+}
